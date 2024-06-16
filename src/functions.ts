@@ -23,13 +23,14 @@
 //   return n * m * l;
 // };
 // console.log(func1(10, 10));
+// console.log(func1(10, 10, 20));
 
 // Rest operater
-// type funcType = (...m: number[]) => number[];
-// const func1: funcType = (...m: number[]) => {
-//   return m;
-// };
-// console.log(func1(10, 10, 10, 12, 13, 14));
+type funcType = (...m: number[]) => number[];
+const func1: funcType = (...m: number[]) => {
+  return m;
+};
+console.log(func1(10, 10, 10, 12, 13, 14));
 
 // function with objects
 // const getData = (product: {
@@ -76,3 +77,5 @@ const errorHandler = (): never => {
 
 type themeMode = "light" | "dark";
 const mode: themeMode = "dark";
+
+

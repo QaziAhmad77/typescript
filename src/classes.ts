@@ -91,3 +91,4 @@ class Product implements ProductType {
 }
 const product = new Product("Face wash", 10, 4, "Dafdsa", true);
 console.log(product);
+
